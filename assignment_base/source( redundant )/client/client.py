@@ -1,11 +1,9 @@
-import base64, time, datetime, ftplib, io, random
+import base64, time, datetime, random, os
 
 # request 
 import requests
 
-# crypto
-import crypto
-import cryptography
+# crypt
 
 # sftp
 import pysftp
