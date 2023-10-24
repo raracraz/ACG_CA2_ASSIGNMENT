@@ -22,10 +22,11 @@ from watchdog.events import FileSystemEventHandler
 
 # declare ip and port
 
-IP = '192.168.242.146' 
-PORT = 22
+#IP = '192.168.242.146' 
+#PORT = 22
 
-# connect to the sftp server 
+# connect to the sftp server
+'''
 try:
     privatekeyfile = 'assignment_base\id_rsa.ppk'
     mykey = paramiko.RSAKey.from_private_key_file(privatekeyfile)
@@ -37,7 +38,7 @@ except Exception as e:
     print("Unable to connect to the sftp server")
     print(e)
     exit()
-
+'''
 # connect to the sqlite3 database
 
 
