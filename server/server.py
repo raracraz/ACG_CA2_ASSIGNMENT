@@ -1,9 +1,6 @@
 # use sqlite3
 import sqlite3
 
-# import pm2
-#import pm2
-
 # import time
 import time
 
@@ -20,8 +17,6 @@ import tornado.ioloop
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# Issues:
-# Can only watch a single directory for changes, change to watch multiple directories in the Watcher function.
 
 # monitor the remote directory for changes in the home/camera1/Public/Footage/ directory
 class Watcher:
