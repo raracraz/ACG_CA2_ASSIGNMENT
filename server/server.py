@@ -20,34 +20,8 @@ import tornado.ioloop
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# declare ip and port
-
-#IP = '192.168.242.146' 
-#PORT = 22
-
-# connect to the sftp server
-'''
-try:
-    privatekeyfile = 'assignment_base\id_rsa.ppk'
-    mykey = paramiko.RSAKey.from_private_key_file(privatekeyfile)
-    transport = paramiko.Transport((IP, PORT))
-    transport.connect(username = 'camera1', pkey = mykey)
-    sftp = paramiko.SFTPClient.from_transport(transport)
-    print("Connected to sftp server at " + IP + ":" + str(PORT)) 
-except Exception as e:
-    print("Unable to connect to the sftp server")
-    print(e)
-    exit()
-'''
-# connect to the sqlite3 database
-
-
-
-
-
-
-
-
+# Issues:
+# Can only watch a single directory for changes, change to watch multiple directories in the Watcher function.
 
 # monitor the remote directory for changes in the home/camera1/Public/Footage/ directory
 class Watcher:
